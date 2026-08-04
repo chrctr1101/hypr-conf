@@ -7,3 +7,8 @@ For good experience you need to get on your PC:
  - waybar
  - hyprlock
  - fastfetch
+
+Also for right display you need to get next fonts:
+ - JetBrains Mono
+ - Noto Sans
+ - Font Awesome
