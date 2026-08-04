@@ -16,7 +16,7 @@ For good experience you need to get on your PC:
 
 Also for right display you need to get next fonts:
  - JetBrains Mono
- - Noto Sans
+ - Noto Fonts / Noto Fonts Emoji
  - Font Awesome
 
 
@@ -25,4 +25,6 @@ Also for right display you need to get next fonts:
 $ HOW TO USE $
 ##############
 
-Just copy desired folder to your ~/.config directory
+Launch 'install.sh'. This script will download on your PC all required packages
+
+Next you need to copy desired folder to your config directory
