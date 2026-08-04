@@ -1,5 +1,5 @@
 # hypr-conf
-My personal Arch/Hyprland configuration
+My personal Arch/Hyprland configuration.
 
 
 
