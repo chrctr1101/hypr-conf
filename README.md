@@ -13,6 +13,9 @@ For good experience you need to get on your PC:
  - hyprlock -- (for locking your device)
  - fastfetch -- (beautiful ASCII picture in terminal)
  - kitty -- (terminal)
+ - wlogout -- (logout menu)
+ - wofi -- (launcher)
+ - yay (for installing from AUR)
 
 Also for right display you need to get next fonts:
  - JetBrains Mono
@@ -25,6 +28,6 @@ Also for right display you need to get next fonts:
 $ HOW TO USE $
 ##############
 
-Launch 'prepare.sh'. This script will download on your PC all required packages
+Launch 'prepare.sh'. This script will download on your PC all required packages. If you are already installed all this packages, script reinstall it again.
 
-Next you need to copy desired folder to your config directory
+Next you need to copy desired folder to your config directory.
