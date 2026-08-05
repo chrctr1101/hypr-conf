@@ -39,7 +39,7 @@ local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "wofi"
 local brouser     = "firefox"
-
+local wlog        = "wlogout"
 
 -------------------
 ---- AUTOSTART ----
@@ -272,6 +272,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("wlogout"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(brouser))
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
