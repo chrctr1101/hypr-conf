@@ -14,7 +14,7 @@ echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 
 for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
 	sleep 0.1s
-	cp -r ${DIR} ~/config/
+	cp -r ${DIR} ~/.config/
 	echo -e "${GREEN}${DIR} is copyed to your config-file"
 	sleep 0.1s
 done
