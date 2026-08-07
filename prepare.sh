@@ -28,7 +28,7 @@ done
 echo -e "${CYAN} (Re)installing fonts${NC}"
 sleep 1s
 
-echo "y" | pacman -S ttf-font-awesome otf-font-awesome ttf-jetbrains-mono noto-fonts noto-fonts-emoji
+echo "y" | pacman -S ttf-font-awesome otf-font-awesome ttf-jetbrains-mono noto-fonts noto-fonts-emoji gnu-free-fonts
 
 
 
