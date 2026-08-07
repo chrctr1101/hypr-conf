@@ -14,7 +14,7 @@ echo -e "\n${GREEN} Start script${NC}"
 
 sleep 2s;
 
-for PKG in "kitty" "waybar" "hyprpaper" "hyprlock" "fastfetch" "make" "git"; do
+for PKG in "kitty" "waybar" "hyprpaper" "hyprlock" "fastfetch" "make" "git" "firefox"; do
 	if command -v ${PKG} &>/dev/null; then
 		echo -e "${GREEN} ${PKG} is installed${NC}"
 		sleep 1s

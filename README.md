@@ -15,6 +15,8 @@ For good experience you need to get on your PC:
  - kitty -- (terminal)
  - wlogout -- (logout menu)
  - wofi -- (launcher)
+ - git -- (work with GitHub)
+ - firefox -- (brouser)
 
 Also for right display you need to get next fonts:
  - JetBrains Mono
