@@ -22,7 +22,6 @@ Also for right display you need to get next fonts:
  - JetBrains Mono
  - Noto Fonts / Noto Fonts Emoji
  - Font Awesome
- - GNU Free Fonts
 
 
 
