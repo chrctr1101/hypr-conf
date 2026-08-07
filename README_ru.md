@@ -22,7 +22,7 @@ $ НЕОБХОДИМЫЕ ПАКЕТЫ $
  - JetBrains Mono
  - Noto Fonts / Noto Fonts Emoji
  - Font Awesome
-
+ - GNU Free Fonts
 
 
 ####################
