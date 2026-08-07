@@ -32,3 +32,4 @@ $ HOW TO USE $
 Launch 'prepare.sh' as root (sudo ./prepare.sh). This script will download on your PC all required packages. If you are already installed all this packages, script reinstall it again.
 
 Next you need to copy desired folder to your config directory.
+If you so lazy, you can launch 'install.sh' and script will take care of everything
