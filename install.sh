@@ -40,6 +40,7 @@ elif [ "$1" = "--gotic" ]; then
 	
 	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
 	sleep 1s
+	awww img ~/.config/hypr/bg1.jpg
 	hyprctl dispatch 'hl.dsp.exit()'
 	
 elif [ "$1" = "--anime" ]; then
@@ -58,6 +59,7 @@ elif [ "$1" = "--anime" ]; then
 	
 		echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
 		sleep 1s
+		awww img ~/.config/hypr/bg1.jpg
 		hyprctl dispatch 'hl.dsp.exit()'
 	fi
 
