@@ -43,7 +43,7 @@ elif [ "$1" = "--gotic" ]; then
 	hyprctl dispatch 'hl.dsp.exit()'
 	
 elif [ "$1" = "--anime" ]; then
-	if [ "$2" = "bright_red"]; then
+	if [ "$2" = "b_red" ]; then
 		echo -e "${BLUE}Start installing 'Anime (Bright Red)'! You have 3 secounds to interrupt it!${NC}"
 		sleep 5s
 		echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
