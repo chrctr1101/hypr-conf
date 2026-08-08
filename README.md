@@ -8,7 +8,6 @@ $ REQUIRED PACKAGES $
 #####################
 
 For good experience you need to get on your PC:
- - hyprpaper -- (for wallpaper)
  - waybar -- (bar with time, CPU, RAM, etc.)
  - hyprlock -- (for locking your device)
  - fastfetch -- (beautiful ASCII picture in terminal)
@@ -17,6 +16,7 @@ For good experience you need to get on your PC:
  - wofi -- (launcher)
  - git -- (work with GitHub)
  - firefox -- (brouser)
+ - awww -- (wallpaper)
 
 Also for right display you need to get next fonts:
  - JetBrains Mono
