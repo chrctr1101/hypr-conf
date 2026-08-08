@@ -54,6 +54,8 @@ hl.on("hyprland.start", function ()
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
      hl.exec_cmd("waybar")
+     hl.exec_cmd("awww-daemon &")
+     hl.exec_cmd("awww img ~/.config/hypr/images.jpg")
 end)
 
 
@@ -99,8 +101,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {"rgba(dededede)", "rgba(8a8a8a8a)"}, angle = 45 },
+            inactive_border = "rgba(00000000)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -214,7 +216,7 @@ hl.config({
 hl.config({
     misc = {
         force_default_wallpaper = 2,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
     },
 })
 

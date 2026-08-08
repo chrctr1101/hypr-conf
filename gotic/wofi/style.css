@@ -1,5 +1,5 @@
 window {
-  background-color: #1a1b26;
+  background-color: rgba(0,0,0,0.5);
 }
 
 * {
@@ -12,7 +12,7 @@ window {
 }
 
 #input {
-  background-color: #1a1b26;
+  background-color: rgba(0,0,0,0.5);
   color: #c0caf5;
   outline: none;
   box-shadow: none;
@@ -36,11 +36,11 @@ window {
 }
 
 #entry:selected {
-  background-color: #c0caf5;
+  background-color: #777777;
   outline: none;
 }
 
 #text:selected {
-  color: #1a1b26;
+  color: #ffffff;
 }
 

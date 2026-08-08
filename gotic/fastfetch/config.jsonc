@@ -19,8 +19,6 @@
     "terminal",
     "cpu",
     "memory",
-    "break",
-    "colors"
+    "break"
   ]
 }
-
