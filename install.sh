@@ -49,6 +49,7 @@ elif [ "$1" = "--help" ]; then
 	echo -e "How to use: ./install.sh  [CONFIGURATION]\n\n"
 	echo -e "Configurations:\n"
 	echo -e "'--simple' -- simple view, like now-installed hyprland"
+	echo -e "'--gotic'  -- gotic view, grey and sad"
 
 
 	echo -e "'--help' -- to show this help\n"
