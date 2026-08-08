@@ -15,10 +15,10 @@
     "hyprland/language",
     "pulseaudio",
     "cpu",
-    "battery",
+    "temperature",
     "memory",
     "network",
-    "temperature",
+    "battery",
     ],
     "hyprland/window": {
       "format": " {}",
