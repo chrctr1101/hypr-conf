@@ -155,5 +155,5 @@ label:focus {
 }
 
 #pulseaudio.muted {
-  color: @text;
+  color: #830010;
 }
