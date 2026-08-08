@@ -13,28 +13,35 @@ if [ "$1" = "--simple" ]; then
 	sleep 5s
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./simple/	
+
 	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
-		sleep 0.1s
-		cp -r ${DIR} ~/config/
+		sleep 0.1s 
+		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
 		sleep 0.1s
 	done
 	
-	echo -e "${BLUE}\nAll is done!\n"
+	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
+	sleep 1s
+	hyprctl dispatch 'hl.dsp.exit()'
 
 elif [ "$1" = "--gotic" ]; then
 	echo -e "${BLUE}Start installing 'Gotic'! You have 3 secounds to interrupt it!${NC}"
 	sleep 5s
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./gotic/	
+
 	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
 		sleep 0.1s
-		cp -r ${DIR} ~/config/
+		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
 		sleep 0.1s
 	done
 	
-	echo -e "${BLUE}\nAll is done!\n"
+	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
+	sleep 1s
+	hyprctl dispatch 'hl.dsp.exit()'
+	
 
 
 elif [ "$1" = "--help" ]; then
