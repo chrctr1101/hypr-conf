@@ -67,7 +67,7 @@ elif [ "$1" = "--help" ]; then
 	echo -e "\n${BLUE} Help${NC}"
 	echo -e "How to use: ./install.sh  [CONFIGURATION] {COLOR}\n\n"
 	echo -e "Configurations:\n"
-	echo -e "'--simple' -- simple view, like now-installed hyprland"
+	echo -e "'--simple' -- simple view, like just installed hyprland"
 	echo -e "'--gotic'  -- gotic view, grey and sad"
 
 	echo -e "'--anime' -- anime view, there are some types of colors
