@@ -40,9 +40,27 @@ elif [ "$1" = "--gotic" ]; then
 	
 	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
 	sleep 1s
-	awww img ~/.config/hypr/bg1.jpg
+	awww img ~/.config/hypr/images/bg1.jpg
 	hyprctl dispatch 'hl.dsp.exit()'
 	
+elif [ "$1" = "--arch" ]; then
+	echo -e "${BLUE}Start installing 'Arch'! You have 3 secounds to interrupt it!${NC}"
+	sleep 5s
+	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
+	cd ./arch/	
+
+	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+		sleep 0.1s
+		cp -r ${DIR} ~/.config/
+		echo -e "${GREEN}${DIR} is copyed to your config-file"
+		sleep 0.1s
+	done
+	
+	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
+	sleep 1s
+	awww img ~/.config/hypr/images/bg1.jpg
+	hyprctl dispatch 'hl.dsp.exit()'
+
 elif [ "$1" = "--anime" ]; then
 	if [ "$2" = "b_red" ]; then
 		echo -e "${BLUE}Start installing 'Anime (Bright Red)'! You have 3 secounds to interrupt it!${NC}"
@@ -59,7 +77,7 @@ elif [ "$1" = "--anime" ]; then
 	
 		echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
 		sleep 1s
-		awww img ~/.config/hypr/bg1.jpg
+		awww img ~/.config/hypr/images/bg1.jpg
 		hyprctl dispatch 'hl.dsp.exit()'
 	fi
 
@@ -71,6 +89,7 @@ elif [ "$1" = "--help" ]; then
 	echo -e "Configurations:\n"
 	echo -e "'--simple' -- simple view, like just installed hyprland"
 	echo -e "'--gotic'  -- gotic view, grey and sad"
+	echo -e "'--arch'   -- arch-tyan, she'll look at you)"
 
 	echo -e "'--anime' -- anime view, there are some types of colors
 	'b_red' -- bright red"
