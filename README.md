@@ -17,6 +17,7 @@ For good experience you need to get on your PC:
  - git -- (work with GitHub)
  - firefox -- (brouser)
  - awww -- (wallpaper)
+ - fish -- (shell)
 
 Also for right display you need to get next fonts:
  - JetBrains Mono

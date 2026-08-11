@@ -14,7 +14,7 @@ if [ "$1" = "--simple" ]; then
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./simple/	
 
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
 		sleep 0.1s 
 		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
@@ -31,7 +31,7 @@ elif [ "$1" = "--gotic" ]; then
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./gotic/	
 
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
 		sleep 0.1s
 		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
@@ -49,7 +49,7 @@ elif [ "$1" = "--arch" ]; then
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./arch/	
 
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
 		sleep 0.1s
 		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
@@ -67,7 +67,7 @@ elif [ "$1" = "--hyprchan" ]; then
 	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 	cd ./hyprchan/	
 
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
 		sleep 0.1s
 		cp -r ${DIR} ~/.config/
 		echo -e "${GREEN}${DIR} is copyed to your config-file"
@@ -87,7 +87,7 @@ elif [ "$1" = "--anime" ]; then
 		echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
 		cd ./anime/b_red/	
 
-		for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi"; do
+		for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
 			sleep 0.1s
 			cp -r ${DIR} ~/.config/
 			echo -e "${GREEN}${DIR} is copyed to your config-file"
