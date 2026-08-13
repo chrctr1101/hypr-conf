@@ -67,19 +67,19 @@ button:hover {
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: @green;
 }
 
 #network {
-  color: @yellow;
+  color: @red;
 }
 
 #temperature {
-  color: @sky;
+  color: @green;
 }
 
 #battery {
-  color: @sky;
+  color: @green;
 }
 
 #clock {
@@ -173,10 +173,74 @@ button:hover {
 
 }
 
+
+#network.good {
+  color: @green;
+}
+#network.warning {
+  background-color: #ffeb3b;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#network.critical {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.3s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+#memory.warning {
+  background-color: #ffeb3b;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#memory.critical {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.3s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+#cpu.warning { 
+  background-color: #ffeb3b;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+#cpu.critical {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.3s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 label:focus {
   background-color: #000000;
 }
 
 #pulseaudio.muted {
-  color: @text;
+  color: @red;
 }

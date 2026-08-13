@@ -46,10 +46,18 @@
     },
     "cpu": {
       "format": "CPU {usage}% ",
-      "tooltip": false
+      "tooltip": true,
+      "states": {
+      	"warning": 65,
+	"critical": 80
+      }
     },
     "memory": {
-      "format": "RAM {}% "
+      "format": "RAM {}% ",
+      "states": {
+      	"warning": 65,
+	"critical": 80
+      }
     },
     "temperature": {
       "warning-threshold": 65,
@@ -74,12 +82,18 @@
       "format-icons": ["", "", "", "", ""]
     },
     "network": {
+      "states": {
+       	 "good": 65,
+	 "warning": 64,
+	 "critical": 30
+       },
       "format-wifi": " {signalStrength}% ",
       "format-ethernet": "{cidr}  ",
       "tooltip-format": "{ifname} via {gwaddr}  ",
       "format-linked": "{ifname} (No IP)  ",
       "format-disconnected": " ⚠ No connection  ",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+
     },
     "pulseaudio": {
       "format": "{icon} {volume}% ",
