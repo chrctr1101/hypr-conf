@@ -34,3 +34,11 @@ Launch 'prepare.sh' as root (sudo ./prepare.sh). This script will download on yo
 
 Next you need to copy desired folder to your config directory.
 If you so lazy, you can launch 'install.sh' and script will take care of everything
+
+
+
+###########
+$ WARNING $
+###########
+
+If you are already have any settings in your /hyprland.lua file they will be erased and replaced. Create an copy of your configuration to save them else you can lost your data. 
