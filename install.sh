@@ -13,9 +13,15 @@ for PKG1 in "fastfetch" "kitty" "fish" "hypr" "wlogout" "waybar" do
     echo -e "${GREEN}${PKG1} is copied to your config directory${NC}"
 done
 
+echo -e "${BLUE}Now we will change new shell (fish)\nEnter your password and then \"/bin/fish\""
+chsh
+echo -e "${BLUE}Type \"/bin/fish\"${NC}"
+
 cp -r wallpapers/ ~/
 echo -e "${GREEN} Wallpapers is copied to your home directory${NC}"
 
 echo -e "${ORANGE}Warning! Trying to copy sddm directory to your usr/share/ folder"
 sleep 1s
 sudo cp -r sddm/ /usr/share/
+
+
