@@ -6,136 +6,16 @@ GREEN='\033[0;032m'
 BLUE='\033[0;034m'
 NC='\033[0m'
 
-CONF=$1
+cd ./packages/
 
-if [ "$1" = "--simple" ]; then
-	echo -e "${BLUE}Start installing 'Simple'! You have 3 secounds to interrupt it!${NC}"
-	sleep 5s
-	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-	cd ./simple/	
+for PKG1 in "fastfetch" "kitty" "fish" "hypr" "wlogout" "waybar" do
+    cp -r ${PKG1} ~/.config/
+    echo -e "${GREEN}${PKG1} is copied to your config directory${NC}"
+done
 
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-		sleep 0.1s 
-		cp -r ${DIR} ~/.config/
-		echo -e "${GREEN}${DIR} is copyed to your config-file"
-		sleep 0.1s
-	done
-	
-	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-	sleep 1s
-	hyprctl dispatch 'hl.dsp.exit()'
+cp -r wallpapers/ ~/
+echo -e "${GREEN} Wallpapers is copied to your home directory${NC}"
 
-elif [ "$1" = "--gotic" ]; then
-	echo -e "${BLUE}Start installing 'Gotic'! You have 3 secounds to interrupt it!${NC}"
-	sleep 5s
-	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-	cd ./gotic/	
-
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-		sleep 0.1s
-		cp -r ${DIR} ~/.config/
-		echo -e "${GREEN}${DIR} is copyed to your config-file"
-		sleep 0.1s
-	done
-	
-	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-	sleep 1s
-	awww img ~/.config/hypr/images/bg1.jpg
-	hyprctl dispatch 'hl.dsp.exit()'
-	
-elif [ "$1" = "--arch" ]; then
-	echo -e "${BLUE}Start installing 'Arch'! You have 3 secounds to interrupt it!${NC}"
-	sleep 5s
-	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-	cd ./arch/	
-
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-		sleep 0.1s
-		cp -r ${DIR} ~/.config/
-		echo -e "${GREEN}${DIR} is copyed to your config-file"
-		sleep 0.1s
-	done
-	
-	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-	sleep 1s
-	awww img ~/.config/hypr/images/bg1.jpg
-	hyprctl dispatch 'hl.dsp.exit()'
-	
-elif [ "$1" = "--hyprchan" ]; then
-	echo -e "${BLUE}Start installing 'Hypr-chan'! You have 3 secounds to interrupt it!${NC}"
-	sleep 5s
-	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-	cd ./hyprchan/	
-
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-		sleep 0.1s
-		cp -r ${DIR} ~/.config/
-		echo -e "${GREEN}${DIR} is copyed to your config-file"
-		sleep 0.1s
-	done
-	
-	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-	sleep 1s
-	awww img ~/.config/hypr/images/bg1.jpg
-	hyprctl dispatch 'hl.dsp.exit()'
-
-elif [ "$1" = "--miku" ]; then
-	echo -e "${BLUE}Start installing 'Miku'! You have 3 secounds to interrupt it!${NC}"
-	sleep 5s
-	echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-	cd ./miku/	
-
-	for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-		sleep 0.1s
-		cp -r ${DIR} ~/.config/
-		echo -e "${GREEN}${DIR} is copyed to your config-file"
-		sleep 0.1s
-	done
-	
-	echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-	sleep 1s
-	awww img ~/.config/hypr/images/bg1.jpg
-	hyprctl dispatch 'hl.dsp.exit()'
-
-
-
-elif [ "$1" = "--anime" ]; then
-	if [ "$2" = "b_red" ]; then
-		echo -e "${BLUE}Start installing 'Anime (Bright Red)'! You have 3 secounds to interrupt it!${NC}"
-		sleep 5s
-		echo -e "${RED}Warning! Please don't interrupt this script!\n${NC}"
-		cd ./anime/b_red/	
-
-		for DIR in "fastfetch" "hypr" "kitty" "waybar" "wlogout" "wofi" "fish"; do
-			sleep 0.1s
-			cp -r ${DIR} ~/.config/
-			echo -e "${GREEN}${DIR} is copyed to your config-file"
-			sleep 0.1s
-		done
-	
-		echo -e "${BLUE}\nAll is done!\nYour Hyprland session will reboot now!"
-		sleep 1s
-		awww img ~/.config/hypr/images/bg1.jpg
-		hyprctl dispatch 'hl.dsp.exit()'
-	fi
-
-
-
-elif [ "$1" = "--help" ]; then
-	echo -e "\n${BLUE} Help${NC}"
-	echo -e "How to use: ./install.sh  [CONFIGURATION] {COLOR}\n\n"
-	echo -e "Configurations:\n"
-	echo -e "'--simple'     -- simple view, like just installed hyprland"
-	echo -e "'--gotic'      -- gotic view, grey and sad"
-	echo -e "'--arch'       -- arch-tyan, she'll look at you)"
-	echo -e "'--hyprchan'   -- hypr-chan, official hyprland mascot"
-	echo -e "'--miku        -- Miku, famous vokaloid in the world'"
-
-	echo -e "'--anime'      -- anime view, there are some types of colors:\n
-	'b_red'         -- bright red"
-
-
-	echo -e "\n'--help'       -- to show this help\n"
-else
-	echo -e "${RED}Incorret config input!\nType './install.sh --help' and select correct argument${NC}"
-fi
+echo -e "${ORANGE}Warning! Trying to copy sddm directory to your usr/share/ folder"
+sleep 1s
+sudo cp -r sddm/ /usr/share/
