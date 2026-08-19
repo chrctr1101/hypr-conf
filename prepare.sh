@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 
 GREEN='\033[0;32m'
 RED='\033[;31m'
@@ -12,23 +12,23 @@ LOG=$(logname)
 
 echo -e "\n${GREEN} Start script${NC}"
 
-sleep 2s;
+sleep 1.5s;
 
-for PKG in "kitty" "waybar" "hyprpaper" "hyprlock" "fastfetch" "make" "git" "firefox" "awww" "fish"; do
+for PKG in "kitty" "hyprland" "waybar" "awww" "hyprlock" "fastfetch" "cmake" "git" "firefox" "fish" "sddm" "pipewire"; do
 	if command -v ${PKG} &>/dev/null; then
 		echo -e "${GREEN} ${PKG} is installed${NC}"
-		sleep 1s
+		sleep 0.5s
 	else
 		echo -e "${YELLOW} ${PKG} is not installed. Install...${NC}"
-		sleep 1s
-		echo "Y" | pacman -S ${PKG}
+		sleep 0.5s
+		echo "Y" | sudo pacman -S ${PKG}
 	fi
 done
 
 echo -e "${CYAN} (Re)installing fonts${NC}"
 sleep 1s
 
-echo "y" | pacman -S ttf-font-awesome otf-font-awesome ttf-jetbrains-mono noto-fonts noto-fonts-emoji 
+echo "y" | sudo pacman -S ttf-font-awesome otf-font-awesome ttf-jetbrains-mono noto-fonts noto-fonts-emoji 
 
 
 
