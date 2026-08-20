@@ -13,6 +13,7 @@ for PKG1 in "fastfetch" "kitty" "fish" "hypr" "wlogout" "waybar"; do
     echo -e "${GREEN}${PKG1} is copied to your config directory${NC}"
 done
 
+sleep 1s
 echo -e "${BLUE}Now we will change new shell (fish)\nEnter your password and then \"/bin/fish\"${NC}"
 sleep 1s
 chsh
@@ -21,24 +22,24 @@ cp -r wallpapers/ ~/
 echo -e "${GREEN}Wallpapers is copied to your home directory${NC}"
 
 echo -e "${ORANGE}Warning! Trying to copy sddm directory to your usr/share/ folder\nand sddm.conf to /etc${NC}"
-sleep 1s
 sudo cp -r sddm/ /usr/share/
 sudo cp sddm.conf /etc
+sleep 1s
 
 echo -e "${ORANGE}Warning! Trying to copy wayland-sessions to your /usr/share/ folder${NC}"
-sleep 1s
 sudo cp -r wayland-sessions/ /usr/share/
+sleep 1s
 
 echo -e "${ORANGE}Warning! Trying to enable services${NC}"
-
+sleep 1s
 sudo systemctl enable sddm --now
 
-echo -e "${ORANGE}Warning! IOnstall sddm theme${NC}"
-
+echo -e "${ORANGE}Warning! Install sddm theme${NC}"
 /usr/share/sddm/themes/SilentSDDM-1.5.0/install.sh
 cd /usr/share/sddm/faces
 w=whoami
 mv chrctr.face.icon ${w}.face.icon
+sleep 1s
 echo -e "${GREEN}All is done! Your system will reboot now!"
 sleep 1s
 reboot
