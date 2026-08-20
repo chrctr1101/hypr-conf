@@ -21,7 +21,7 @@ for PKG in "kitty" "vim" "nano" "man" "hyprland" "uwsm" "waybar" "awww" "hyprloc
 	else
 		echo -e "${YELLOW} ${PKG} is not installed. Install...${NC}"
 		sleep 0.5s
-		echo "Y" | sudo pacman -S ${PKG}
+	    sudo pacman -S ${PKG}
 	fi
 done
 
