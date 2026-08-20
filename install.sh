@@ -8,8 +8,8 @@ NC='\033[0m'
 
 cd ./packages/
 
-for PKG1 in "fastfetch" "kitty" "fish" "hypr" "wlogout" "waybar" do
-    cp -r ${PKG1} ~/.config/
+for PKG1 in "fastfetch" "kitty" "fish" "hypr" "wlogout" "waybar"; do
+    cp -r $PKG1 ~/.config/
     echo -e "${GREEN}${PKG1} is copied to your config directory${NC}"
 done
 
