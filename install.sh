@@ -32,3 +32,7 @@ sudo cp -r wayland-sessions/ /usr/share/
 echo -e "${ORANGE}Warning! Trying to enable services${NC}"
 
 sudo systemctl enable sddm --now
+
+echo -e "${GREEN}All is done! Your system will reboot now!"
+sleep 1s
+reboot
