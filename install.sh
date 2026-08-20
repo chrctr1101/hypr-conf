@@ -33,6 +33,9 @@ echo -e "${ORANGE}Warning! Trying to enable services${NC}"
 
 sudo systemctl enable sddm --now
 
+echo -e "${ORANGE}Warning! IOnstall sddm theme${NC}"
+
+/usr/share/sddm/themes/SilentSDDM-1.5.0/install.sh
 echo -e "${GREEN}All is done! Your system will reboot now!"
 sleep 1s
 reboot
